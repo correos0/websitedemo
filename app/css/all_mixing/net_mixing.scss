@@ -1,0 +1,52 @@
+
+///#######***Color***######\\\
+
+
+///#######***Mixing***######\\\
+
+
+ 
+ 
+
+@mixin breakpoints($point) {
+	@if $point == "mobile" {
+        @media (max-width:767px){
+        	@content;
+        }
+	}@else if $point == "medium" {
+		@media (max-width:991px){
+        	@content;
+        }
+	}@else if $point == "s_larg" {
+		@media (max-width:1110px){
+        	@content;
+        }
+	}@else if $point == "large" {
+		@media (max-width:1259px){
+        	@content;
+        }
+	}@else if $point == "xxl" {
+		@media (max-width:1339px){
+        	@content;
+        }
+	}@else if $point == "nokia" {
+		@media (max-width:667px){
+        	@content;
+        }
+	}@else if $point == "motorola" {
+		@media (max-width:567px){
+        	@content;
+        }
+	}@else if $point == "small" {
+		@media (max-width:450px){
+        	@content;
+        }
+	}
+	@else if $point == "so_md" {
+		@media (max-width:840px){
+        	@content;
+        }
+	}
+}
+
+
